@@ -4,6 +4,11 @@ import AddIcon from '@material-ui/icons/Add';
 import { fade, makeStyles } from '@material-ui/core/styles'
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+// import GroupAddIcon from '@material-ui/icons/GroupAdd';
+import GroupIcon from '@material-ui/icons/Group';
+import IconButton from '@material-ui/core/IconButton';
+
 
 const useStyles = makeStyles((theme) => ({
     typoStyles: {
@@ -60,7 +65,12 @@ const Header = () => {
                     className={classes.typoStyles} >
                 Profiles | Admin
                 </Typography>
-                <AddIcon/>
+                <IconButton color="inherit">
+                    <GroupIcon />
+                </IconButton>
+                <IconButton color="inherit">
+                    <AddIcon/>
+                </IconButton>
                 <div className={classes.search}>
                     <div className={classes.searchIcon}>
                         <SearchIcon />
@@ -73,7 +83,10 @@ const Header = () => {
                         }}
                         inputProps={{ 'aria-label': 'search' }}
                         />
-                    </div>
+                </div>
+                <IconButton color="inherit">
+                    <ChevronLeftIcon />
+                </IconButton>
             </Toolbar>
         </AppBar>
         )
