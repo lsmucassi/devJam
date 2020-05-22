@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Grid } from '@material-ui/core'
-import Header from './Header';
+import Header from './Header/Header';
 
 const App = () => {
   return (
