@@ -15,6 +15,8 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import EditIcon from '@material-ui/icons/Edit';
+import ShareIcon from '@material-ui/icons/Share';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,7 +24,11 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     height: 0,
-    paddingTop: '56.25%', // 16:9
+    paddingTop: '56.25%', // 16:9 • 
+    // This impressive paella is a perfect party 
+    // dish and a fun meal to cook together with 
+    // your guests. Add 1 cup of frozen peas along 
+    // with the mussels, if you like.
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -39,31 +45,35 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ProfileCard() {
+const ProfileCard = props => {
   const classes = useStyles();
+  const { avatarSrc, title, occupation, bio, imgSrc } = props;
 
   return (
     <Card className={classes.root}>
       <CardHeader
         avatar={
-          <Avatar aria-label="recipe" 
+          <Avtar aria-label="recipe" 
+                src={avatarSrc}
                 className={classes.avatar}>
             Z
-          </Avatar>
+          </Avtar>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="Software Engineer • @Zaio"/>
+        action={
+            <IconButton aria-label="settings">
+              <ShareIcon />
+            </IconButton>
+        }
+        title={title}
+        subheader={occupation} />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
-        title="Paella dish"/>
+        image={imgSrc}
+        title={title} />
       <CardContent>
         <Typography variant="body2" 
                 color="textSecondary" component="p">
-          This impressive paella is a perfect party 
-          dish and a fun meal to cook together with 
-          your guests. Add 1 cup of frozen peas along 
-          with the mussels, if you like.
+                    {bio}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -78,3 +88,5 @@ export default function ProfileCard() {
     </Card>
   );
 }
+
+export default ProfileCard

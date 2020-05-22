@@ -3,7 +3,7 @@ import ProfileCard from '../Comps/ProfileCard.jsx'
 
 const Profiles = () => {
  return (
-     <ProfileCard />
+     <ProfileCard avatarSrc="WL" title="William & Linda" occupation="Software Engineer @Zaio" />
  )
 
 }
