@@ -6,7 +6,7 @@ import profileInfo from '../testData'
 const Profiles = () => {
     const getProfileInfo = profileObj => {
         return(
-            <Grid item xs={12} sm={3}>
+            <Grid item xs={12} sm={4}>
                 <ProfileCard {...profileObj} />
             </Grid>
         )
