@@ -13,7 +13,7 @@ const App = () => {
       </Grid>
       <Grid item container>
         <Grid item xs={0} sm={1} />
-        <Grid item xs={12} sm={8}>
+        <Grid item xs={12} sm={10}>
            <Profiles/>
         </Grid>
         <Grid item xs={0} sm={1} />
