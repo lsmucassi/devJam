@@ -53,11 +53,11 @@ const ProfileCard = props => {
     <Card className={classes.root}>
       <CardHeader
         avatar={
-          <Avtar aria-label="recipe" 
-                src={avatarSrc}
+          <Avatar aria-label="recipe" 
+                // src={avatarSrc}
                 className={classes.avatar}>
-            Z
-          </Avtar>
+            {avatarSrc}
+          </Avatar>
         }
         action={
             <IconButton aria-label="settings">
