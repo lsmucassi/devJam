@@ -34,40 +34,51 @@ export default function AddressForm() {
             autoComplete="family-name"
           />
         </Grid>
-        <Typography variant="h7" >
-          Social Handles
-        </Typography>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            required
+            id="title"
+            name="title"
+            label="Trade Title"
+            fullWidth
+            autoComplete="work-as"
+          />
+        </Grid>
+        
         <Grid item xs={12} sm={2}>
-        <TextField
-            id="git"
-            name="git"
-            label="github"
-            autoComplete="https://github.com/"
-          />
-          <TextField
-            id="insta"
-            name="insta"
-            label="@instagram"
-            autoComplete="https://www.instagram.com/ "
-          />
-          <TextField
-            id="youtube"
-            name="youtube"
-            label="YouTube"
-            autoComplete="https://www.youtube.com/ "
-          />
-          <TextField
-            id="linked"
-            name="linked"
-            label="linkedIn"
-            autoComplete="https://www.linkedin.com/in/ "
-          />
-          <TextField
-            id="twitter"
-            name="twitter"
-            label="@twitter"
-            autoComplete="https://www.twitter.com/ "
-          />
+            <Typography variant="h7" >
+              Social Handles
+            </Typography>
+            <TextField
+                id="git"
+                name="git"
+                label="github"
+                autoComplete="https://github.com/"
+              />
+              <TextField
+                id="insta"
+                name="insta"
+                label="@instagram"
+                autoComplete="https://www.instagram.com/ "
+              />
+              <TextField
+                id="youtube"
+                name="youtube"
+                label="YouTube"
+                autoComplete="https://www.youtube.com/ "
+              />
+              <TextField
+                id="linked"
+                name="linked"
+                label="linkedIn"
+                autoComplete="https://www.linkedin.com/in/ "
+              />
+              <TextField
+                id="twitter"
+                name="twitter"
+                label="@twitter"
+                autoComplete="https://www.twitter.com/ "
+              />
         </Grid>
         <Grid item xs={12} sm={9}>
           <TextField id="state" name="state" label="State/Province/Region" fullWidth />
