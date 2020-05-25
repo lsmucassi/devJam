@@ -15,10 +15,10 @@ const App = () => {
         <Header/>
       </Grid>
       <Grid item container>
-        {/* <EditProfile /> */}
         <Grid item xs={0} sm={1} />
         <Grid item xs={12} sm={10}>
-           <Profiles/>
+           {/* <Profiles/> */}
+           <EditProfile />
         </Grid>
         <Grid item xs={0} sm={1} />
       </Grid>

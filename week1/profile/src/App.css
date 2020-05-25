@@ -1,13 +1,14 @@
+body {
+  /* color: white; */
+  background-color:white;
+}
+
 .App {
   text-align: center;
   padding: 0;
   margin:0;
-  background-color:#243555
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-color:#243555;
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
