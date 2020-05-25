@@ -10,7 +10,7 @@ export default function AddressForm() {
   return (
 
     <React.Fragment >
-      <Typography variant="h6" gutterBottom>
+      <Typography variant="h6" gutterBottop>
         Name + Surname
       </Typography>
       <Grid container spacing={3}>
@@ -34,21 +34,45 @@ export default function AddressForm() {
             autoComplete="family-name"
           />
         </Grid>
-       
+        <Typography variant="h7" >
+          Social Handles
+        </Typography>
         <Grid item xs={12} sm={2}>
+        <TextField
+            id="git"
+            name="git"
+            label="github"
+            autoComplete="https://github.com/"
+          />
           <TextField
-            required
             id="insta"
-            name="city"
-            label="City"
-            fullWidth
-            autoComplete="shipping address-level2"
+            name="insta"
+            label="@instagram"
+            autoComplete="https://www.instagram.com/ "
+          />
+          <TextField
+            id="youtube"
+            name="youtube"
+            label="YouTube"
+            autoComplete="https://www.youtube.com/ "
+          />
+          <TextField
+            id="linked"
+            name="linked"
+            label="linkedIn"
+            autoComplete="https://www.linkedin.com/in/ "
+          />
+          <TextField
+            id="twitter"
+            name="twitter"
+            label="@twitter"
+            autoComplete="https://www.twitter.com/ "
           />
         </Grid>
-        <Grid item xs={12} sm={2}>
+        <Grid item xs={12} sm={9}>
           <TextField id="state" name="state" label="State/Province/Region" fullWidth />
         </Grid>
-        <Grid item xs={12} sm={2}>
+        <Grid item xs={12} sm={6}>
           <TextField
             required
             id="zip"
